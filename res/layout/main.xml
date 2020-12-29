@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="315dp"
+        android:layout_height="330dp"
+        android:layout_marginLeft="38dp"
+        android:text="Word"
+        android:textSize="22sp" />
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:text="Previous"
+                android:id="@+id/previous"/>
+        <Button
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:text="Random"
+                android:id="@+id/random"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/next" android:text="Next"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Spinner
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/page"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView" android:text="Page:"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="62dp"
+                    android:id="@+id/pagesInput"/>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Load All"
+                        android:id="@+id/loadAll"/>
+                <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Load"
+                        android:id="@+id/load"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
